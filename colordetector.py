@@ -17,10 +17,10 @@ def detect_color(hsv_frame, color_ranges):
 
 # Adjusted narrower HSV ranges
 color_ranges = {
-    'Lead': (np.array([110, 223, 37]), np.array([124, 55, 123])),  # Narrower range for Lead (Gray tones)
+    'Emerald': (np.array([55, 72, 17]), np.array([75, 152, 97])),  # Narrower range for Emerald (Green tones)
     'Gold': (np.array([9, 96, 101]), np.array([27, 162, 174])),  # Gold (working)
-    'Redstone': (np.array([166, 90, 86]), np.array([179, 170, 166])),  # Redstone (working)
-    'Lapis': (np.array([95, 94, 112]), np.array([115, 174, 192])),  # Narrower range for Lapis (Deep Blue)
+   'Redstone': (np.array([167, 89, 132]), np.array([179, 169, 212])),  # Redstone (working)
+    'Lapis': (np.array([102, 72, 126]), np.array([122, 152, 206])),  # Narrower range for Lapis (Deep Blue)
 }
 
 cap = cv2.VideoCapture(0)
